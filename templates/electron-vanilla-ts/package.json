@@ -1,0 +1,33 @@
+{
+	"name": "electron-vanilla-ts",
+	"version": "1.0.0",
+	"private": true,
+	"description": "",
+	"main": "dist-electron/main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build && electron-builder",
+		"preview": "vite preview"
+	},
+	"keywords": [],
+	"author": {
+		"name": "",
+		"email": "n3bula@t3ch.com"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "5.2.2",
+		"vite": "5.1.6",
+		"electron": "30.0.1",
+		"electron-builder": "24.13.3",
+		"vite-plugin-electron": "0.28.6",
+		"vite-plugin-electron-renderer": "0.14.5"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"electron",
+			"esbuild"
+		]
+	}
+}
